@@ -88,10 +88,15 @@ with st.sidebar:
 
     st.markdown("""
 **① このモデルは何を表しているか**
+
     各個体は 2つの対立遺伝子を持つ：
         [0,0] = ホモ接合（0）
+        
         [0,1] = ヘテロ接合
+        
         [1,1] = ホモ接合（1）
+        
+        
 有限個体群では  
 👉 **ランダムな配偶子抽出だけで**  
 対立遺伝子頻度が世代ごとに変動する。
@@ -226,4 +231,5 @@ st.download_button(
     file_name="allele0_frequency_table_long.csv",
     mime="text/csv"
 )
+
 
